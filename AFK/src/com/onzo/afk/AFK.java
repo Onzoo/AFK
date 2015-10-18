@@ -68,6 +68,7 @@ public class AFK extends JavaPlugin implements Listener {
 					if (player != null) {
 						if (!player.getLocation().equals(playerLocations.get(player))) {
 							setIsAfk(player, false);
+							updateTime(player);
 						} else if (System.currentTimeMillis() - getTimeSinceActive(player) >= 120000) {
 							setIsAfk(player, true);
 						}
@@ -92,7 +93,6 @@ public class AFK extends JavaPlugin implements Listener {
 			}
 			Player player = (Player) sender;
 			if (!(player.hasPermission("afk.toggle") || !(player.hasPermission("afk.allow")))) {
-				//player.sendMessage("§c§oYou do not have permission to use this command.");
 				return false;
 			}
 
