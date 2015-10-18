@@ -91,7 +91,7 @@ public class AFK extends JavaPlugin implements Listener {
 				return true;
 			}
 			Player player = (Player) sender;
-			if (!(player.hasPermission("afk.toggle"))) {
+			if (!(player.hasPermission("afk.toggle") || !(player.hasPermission("afk.allow")))) {
 				//player.sendMessage("§c§oYou do not have permission to use this command.");
 				return false;
 			}
