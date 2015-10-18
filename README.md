@@ -12,6 +12,13 @@ Lightweight AFK plugin meant with a few bits tacked on.
 <li><strong>/afk</strong> - Automatically toggles the player's afk state.</li>
 </ul>
 
+## Effects of being AFK ##
+By default, an afk person will:
+<ul>
+<li>Be exempt from needing to be in a bed to sleep through the night (configurable).</li>
+<li>Have a prefix on their nameplate and tab menu (configurable).</li>
+</ul>
+
 ## Technical ##
 The player will enter an afk state under *any* of the following conditions:
 <ul>
