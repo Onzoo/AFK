@@ -1,5 +1,5 @@
 # AFK Plugin - v1.0 Spigot 1.8.8
-Lightweight AFK plugin meant with a few bits tacked on.
+A basic, easy-to-use AFK plugin.
 
 ## Permissions ##
 <ul>
