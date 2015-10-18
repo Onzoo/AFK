@@ -68,7 +68,7 @@ public class AFK extends JavaPlugin implements Listener {
 					if (player != null) {
 						if (!player.getLocation().equals(playerLocations.get(player))) {
 							setIsAfk(player, false);
-						} else if (System.currentTimeMillis() - getTimeSinceActive(player) >= 180000) {
+						} else if (System.currentTimeMillis() - getTimeSinceActive(player) >= 120000) {
 							setIsAfk(player, true);
 						}
 						updateLocation(player);
