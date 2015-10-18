@@ -1,0 +1,26 @@
+name: AFK
+main: com.onzo.afk.AFK
+version: 1.0
+description: >
+             A simple, lightweight AFK plugin.
+author: Onzo
+database: false
+
+commands:
+  afk:
+    description: Toggles your afk state.
+    permission: afk.toggleafk
+
+permissions:
+  afk.*:
+    description: Provides all afk permissions.
+    default: true
+    children:
+      afk.toggle: true
+      afk.allow: true
+  afk.toggle:
+    description: Allows you to toggle your afk state.
+    default: true
+  afk.allow:
+    description: Allows you to be afk (through lack of movement).
+    default: true

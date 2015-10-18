@@ -1,0 +1,10 @@
+# If true, AFK people will be exempt from the requirement of sleeping to turn the time to day.
+afk-skip-night: true
+
+# Use an ampersand (&) to define colour codes.
+afk-enable-message: '&7&oYou are now &4&oAFK&7.'
+afk-disable-message: '&7&oYou are &4&ono longer AFK&7.'
+
+# Prefix is irrelevant if the nameplate is set to false.
+afk-enable-nameplate: true
+afk-nameplate-prefix: '&4&o[AFK]&r '
