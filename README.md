@@ -3,8 +3,9 @@ Lightweight AFK plugin meant with a few bits tacked on.
 
 ## Permissions ##
 <ul>
-<li><strong>afk.allow</strong> - If set to false, prevents the player from being afk (whether via /afk or by standing still).</li>
-<li><strong>afk.toggle</strong> - If set to false, prevents the player from using the /afk command.
+<li><strong>afk.allow</strong> (Default: ON) - If on, allows the player to enter an afk state through idling.</li>
+<li><strong>afk.toggle</strong> (Default: ON) - If on, allows the player to use the /afk command. <strong>afk.allow</strong> MUST be active alongside this.</li>
+<li><strong>afk.*</strong> (Default: ON) - If on, enables both <strong>afk.allow</strong> and <strong>afk.toggle</strong>.</li>
 </ul>
 
 ## Commands ##
